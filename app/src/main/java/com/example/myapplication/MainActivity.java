@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         glasha.color = "brown";
         glasha.talk();
 
+        Cat vaska = new Cat();
+        vaska.talk("Meow, meow!");
+
         Puma puma = new Puma();
         puma.name = "Leo";
 
@@ -43,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         double d = x * 2;
         z = a + y;
     }
-    void method1() {
-        int a;
-        a = 1;
-    }
+        void method1() {
+            int a;
+            a = 1;
+        }
 }
