@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         murzik.talk();
 
         Cat glasha = new Cat();
+
         glasha.age = 1;
         glasha.name = "Glasha";
         glasha.breed = "Don";
