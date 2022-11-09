@@ -20,6 +20,7 @@ public class Cat {
         this.color = color;
     }
 
+
     public void talk(){
         Log.i("talk()", "Meow! My name is " + name + ", and I'm " + age + " yaers old. My breed " + breed + ", my color is " + color);
     }

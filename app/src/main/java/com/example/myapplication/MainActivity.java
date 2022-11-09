@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         Cat glasha = new Cat();
 
+
         glasha.age = 1;
         glasha.name = "Glasha";
         glasha.breed = "Don";
