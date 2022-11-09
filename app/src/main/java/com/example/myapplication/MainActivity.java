@@ -3,28 +3,27 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
     Cat myCat;
-    int z;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Cat vaska = new Cat();
-        vaska.talk("Meow, meow!");
+        myCat = new Cat(3,"Barsik","Padre","red");
+        myCat.talk();
 
-        Puma bagira = new Puma();
-        bagira.talk();
-
-        Cat puma = new Cat();
-        puma.talk();
-
-        Cat murzik = new Lion();
+        Cat murzik = new Cat(4,"Murzik","Fratello","yellow");
         murzik.talk();
 
+        Cat glasha = new Cat();
+        glasha.age = 1;
+        glasha.name = "Glasha";
+        glasha.breed = "Don";
+        glasha.color = "brown";
+        glasha.talk();
     }
 }
