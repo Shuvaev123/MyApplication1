@@ -13,7 +13,7 @@ public class Cat {
         name = "Vaska";
     }
 
-    public Cat(int age, String name, String breed, String color){
+    public Cat (int age, String name, String breed, String color){
         this.age = age;
         this.name = name;
         this.breed = breed;
