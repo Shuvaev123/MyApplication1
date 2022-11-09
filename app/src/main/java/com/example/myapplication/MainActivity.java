@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         myCat = new Cat(3,"Barsik","Padre","red");
         myCat.talk();
 
