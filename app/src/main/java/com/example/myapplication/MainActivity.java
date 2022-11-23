@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         Cat puma = new Cat();
 
+
+
+
         Cat murzik = new Lion();
 
         Lion lion = new Lion();
