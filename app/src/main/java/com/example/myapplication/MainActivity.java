@@ -3,32 +3,55 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     Cat myCat;
-
+    int z;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Cat vaska = new Cat();
+
+        Puma bagira = new Puma();
+
+        Cat puma = new Cat();
+
+        Cat murzik = new Lion();
+
+        Lion lion = new Lion();
+
+        ArrayList<Cat> cats = new ArrayList<>();
+        cats.add(vaska);
+        cats.add(bagira);
+        cats.add(puma);
+        cats.add(murzik);
+        cats.add(lion);
 
 
 
-        myCat = new Cat(3,"Barsik","Padre","red");
-        myCat.talk();
+        Cat cat = cats.get(0);
+        Cat cat1 = cats.get(1);
+        Cat cat2 = cats.get(2);
+        Cat cat3 = cats.get(3);
+        Cat cat4 = cats.get(4);
 
-        Cat murzik = new Cat(4,"Murzik","Fratello","yellow");
-        murzik.talk();
+        Puma puma1 = (Puma)cats.get(1);
+        puma1.talk();
 
-        Cat glasha = new Cat();
+        Cat cat5 = cats.get(4);
+        if(cat5 instanceof  Puma){
+            Puma puma2 = (Puma) cat5;
+            puma2.talk();
+        }else{
+            Log.i("instanceof","This is not puma");
+        }
+        cat5.talk();
 
-
-        glasha.age = 1;
-        glasha.name = "Glasha";
-        glasha.breed = "Don";
-        glasha.color = "brown";
-        glasha.talk();
     }
 }
